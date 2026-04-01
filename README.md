@@ -1,6 +1,6 @@
 # tanh-symmetric-lut-approximation-and-analysis
 
-## 📌 Overview
+## Overview
 
 This project presents a **Look-Up Table (LUT)-based piecewise quadratic approximation** of the hyperbolic tangent function `tanh(x)`.
 
@@ -14,30 +14,30 @@ Instead of computing the full range, the approximation is calculated only for th
 
 ---
 
-## 🎯 Objectives
+## Objectives
 
-* Implement a **quadratic LUT-based approximation** of `tanh(x)`
-* Compare **symmetric vs non-symmetric approaches**
-* Analyze:
+- Implement a **quadratic LUT-based approximation** of `tanh(x)`
+- Compare **symmetric vs non-symmetric approaches**
+- Analyze:
 
-  * approximation accuracy (max error)
-  * computation time
-* Investigate the impact of:
+  - approximation accuracy (max error)
+  - computation time
+- Investigate the impact of:
 
-  * number of LUT points
-  * input range
+  - number of LUT points
+  - input range
 
 ---
 
-## ⚙️ Methodology
+## Methodology
 
 ### 1. LUT Generation
 
 The input range is divided into segments. For each segment:
 
-* ( Y_k ) – function value at the beginning
-* ( B_k ) – linear slope
-* ( A_k ) – quadratic correction (based on midpoint)
+- ( Y_k ) – function value at the beginning
+- ( B_k ) – linear slope
+- ( A_k ) – quadratic correction (based on midpoint)
 
 ### 2. Quadratic Approximation
 
@@ -55,30 +55,30 @@ tanh(-x) = -tanh(x)
 
 ---
 
-## 📊 Results
+## Results
 
 The project compares:
 
-* **Maximum approximation error**
-* **Computation time**
+- **Maximum approximation error**
+- **Computation time**
 
 Key observations:
 
-* Symmetric approach significantly reduces computation time
-* Accuracy improves with more LUT points
-* Larger input ranges increase approximation error
+- Symmetric approach significantly reduces computation time
+- Accuracy improves with more LUT points
+- Larger input ranges increase approximation error
 
 ---
 
-## 🚀 Technologies
+## Technologies
 
-* Python 3
-* NumPy
-* Matplotlib
+- Python 3
+- NumPy
+- Matplotlib
 
 ---
 
-## ▶️ Installation
+## Installation
 
 Install required libraries:
 
@@ -90,7 +90,7 @@ pip install numpy matplotlib
 
 ---
 
-## ▶️ How to Run
+## How to Run
 
 ### Option 1 – Jupyter Notebook
 
@@ -108,7 +108,7 @@ Open the file directly in your browser:
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 .
@@ -119,25 +119,25 @@ Open the file directly in your browser:
 
 ---
 
-## 📈 Visualizations
+## Visualizations
 
 The project generates plots showing:
 
-* Exact vs approximated `tanh(x)`
-* LUT points
-* Approximation error
-* Performance comparison (error & time)
+- Exact vs approximated `tanh(x)`
+- LUT points
+- Approximation error
+- Performance comparison (error & time)
 
 ---
 
-## 📌 Key Takeaways
+## Key Takeaways
 
-* Using symmetry significantly reduces computation cost
-* LUT-based approximation is efficient and scalable
-* There is a trade-off between accuracy and LUT size
+- Using symmetry significantly reduces computation cost
+- LUT-based approximation is efficient and scalable
+- There is a trade-off between accuracy and LUT size
 
 ---
 
-# 👤 Author
+## Author
 
 Hubert Jabłoński
